@@ -1,1 +1,22 @@
 {{yield}}
+
+<h1 style="text-align:center;">{{entry.title}}</h1>
+<div class="well">
+  <div class="row" style="text-align:left;">
+    <p>{{entry.content}}</p>
+  </div>
+</div>
+
+<div class="container">
+  <span class="btn btn-primary">Add Comment</span>
+  <span><a href="#">Edit</a></span>
+</div>
+
+{{#each posts as |post|}}
+  <div class="container">
+    <div class="well">
+      {{post.content}}
+    </div>
+    <span>Edit</span>
+  </div>
+{{/each}}
