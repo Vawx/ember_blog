@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="well">
+        <form>
+          <a href="#"><h3>{{#link-to 'index'}}Blog{{/link-to}}</h3></a>
+        </form>
+      </div>
+    </div>
+    <div class="col-xs-8">
+      <div class="well">
+        <form style="text-align:right;">
+          <h3><a href="#" style="padding-right:24px;">{{#link-to 'about'}}About{{/link-to}}</a>
+          <a href="#" style="padding-right:24px;">{{#link-to 'contact'}}Contact{{/link-to}}</a>
+          <a href="#">{{#link-to 'newpost'}}New Post{{/link-to}}</a></h3>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{outlet}}
