@@ -7,4 +7,10 @@ export default Ember.Route.extend( {
       entries: this.store.findAll("entry"),
     });
   },
+  actions: {
+    destroyEntry( entry ) {
+      entry.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });

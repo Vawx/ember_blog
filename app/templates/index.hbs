@@ -2,6 +2,6 @@
 
 <div class="container">
   {{#each model.entries as |entry|}}
-    {{entry-tile entry=entry}}
+    {{entry-tile entry=entry destroyEntry="destroyEntry"}}
   {{/each}}
 </div>
