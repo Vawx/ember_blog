@@ -9,7 +9,8 @@
 
 <div class="container">
   <span class="btn btn-primary">Add Comment</span>
-  <span><a href="#">Edit</a></span>
+  <span><a href="#" {{action 'edit'}}>Edit</a></span>
+  <span><a href="#" {{action 'delete'}}>Delete</a></span>
 </div>
 
 {{#each posts as |post|}}
@@ -17,6 +18,5 @@
     <div class="well">
       {{post.content}}
     </div>
-    <span>Edit</span>
   </div>
 {{/each}}
